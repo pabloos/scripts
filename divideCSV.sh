@@ -1,8 +1,8 @@
 #!/bin/sh
 
 currentCSV="$(pwd)/$1"
-nColumns=$(head -1 $currentCSV | sed 's/[^,]//g' | wc -c)
 
+nColumns=$(head -1 $currentCSV | sed 's/[^,]//g' | wc -c)
 contents="2_ToTrans"
 mkdir $(pwd)/$contents 2> /dev/null && cd $contents
 
